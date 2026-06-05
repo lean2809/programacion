@@ -146,7 +146,7 @@ def pantalla_inicio():
             st.rerun()
         st.markdown("</div>", unsafe_allow_html=True)
         
-    st.markdown("<div class='footer'>2027 - UNIVERSIDAD CARDENAL MIGUEL OBANDO BRAVO</div>", unsafe_allow_html=True)
+    st.markdown("<div class='footer'>2026 - UNIVERSIDAD CARDENAL MIGUEL OBANDO BRAVO</div>", unsafe_allow_html=True)
 
 def aplicacion_principal():
     inyectar_estilos()
