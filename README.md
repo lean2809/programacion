@@ -30,10 +30,6 @@ python main.py
 
 ## Enlace web de la app
 
-```text
-Enlace de streamlit
-```
-
 https://elevadordecangilonesparagranos.streamlit.app
 
 ## Que calcula
