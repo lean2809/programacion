@@ -28,20 +28,13 @@ python -m pip install -r requirements.txt
 python main.py
 ```
 
-## Ejecutar la version web
-
-```powershell
-python -m streamlit run app.py
-```
-
 ## Enlace web de la app
 
 ```text
-Pendiente: publicar en Streamlit Cloud y colocar aqui el enlace real.
+Enlace de streamlit
 ```
 
-El enlace de ejemplo no se usa dentro del proyecto. Cuando Streamlit genere el link de
-esta app, reemplaza la variable `URL_STREAMLIT` en `app.py` y `main.py`.
+https://elevadordecangilonesparagranos.streamlit.app
 
 ## Que calcula
 
