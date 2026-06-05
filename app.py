@@ -20,7 +20,7 @@ def inyectar_estilos():
         <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap');
         
-        html, body, [class*="css"] {
+        html, body {
             font-family: 'Montserrat', sans-serif;
             background-color: #0b0f19;
             color: #e2e8f0;
@@ -249,14 +249,19 @@ def aplicacion_principal():
 
     elif menu == "Graficas":
         if st.session_state.historial:
+            st.markdown("<div class='tarjeta-premium'>", unsafe_allow_html=True)
             df = pd.DataFrame(st.session_state.historial)
             opcion = st.selectbox("Grafica", ["Riesgo", "Entrada vs salida", "Atasco vs rotura"])
+            st.markdown("<br>", unsafe_allow_html=True)
+            
             if opcion == "Riesgo":
                 st.line_chart(df["riesgo_general"] * 100)
             elif opcion == "Entrada vs salida":
                 st.bar_chart(df[["flujo_entrada_t_h", "salida_t_h"]])
             else:
                 st.line_chart(df[["prob_atasco", "prob_rotura"]] * 100)
+                
+            st.markdown("</div>", unsafe_allow_html=True)
         else:
             st.info("Registra un analisis para ver graficas.")
 
